@@ -1,21 +1,20 @@
-
 #include "stack.h"
 
-void Stack::InitStack(stack* s, uint32_t max, Point* data) {
+void StackHandler::InitStack(stack* s, uint32_t max, Point* data) {
     s->MAX = max;
     s->top = -1;
     s->data = data;
 }
 
-uint8_t Stack::FullStack(stack* s) {
+uint8_t StackHandler::FullStack(stack* s) {
     return ((s->top) + 1) == (s->MAX);
 }
 
-uint8_t Stack::EmptyStack(stack* s) {
+uint8_t StackHandler::EmptyStack(stack* s) {
     return (s->top) == -1;
 }
 
-uint8_t Stack::PushStack(stack* s, uint8_t x, uint8_t y) {
+uint8_t StackHandler::PushStack(stack* s, uint8_t x, uint8_t y) {
     if (FullStack(s))
         return 0;
     Point a;
@@ -26,7 +25,7 @@ uint8_t Stack::PushStack(stack* s, uint8_t x, uint8_t y) {
     return 1;
 }
 
-Point Stack::PopStack(stack* s) {
+Point StackHandler::PopStack(stack* s) {
     if (EmptyStack(s)) {
         Point a;
         a.x = 0xff;

@@ -3,7 +3,7 @@
 
 extern DataHandler datahandler;
 extern Controller controller;
-extern Speed speed;
+extern SpeedHandler speedhandler;
 extern StackHandler stackhandler;
 
 bool ImageHandler::standard() {
@@ -553,6 +553,7 @@ void ImageHandler::getRegionInfoLeft(uint8_t x,
                                      uint8_t src[][XM],
                                      uint8_t dst[][XM],
                                      RegionInfoLeft* r) {
+    Point a;
     stack s;
     Point data[3000];
     stackhandler.InitStack(&s, 3000, data);

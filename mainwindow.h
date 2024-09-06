@@ -20,9 +20,9 @@ QT_END_NAMESPACE
 #define II imagehandler.imgInfo
 #define IF imagehandler.imgFlag
 
-#define SI speed.speedInfo
-#define SP speed.speedParam
-#define TDP speed.trackDectionParam
+#define SI speedhandler.speedInfo
+#define SP speedhandler.speedParam
+#define TDP speedhandler.trackDectionParam
 
 #define DP controller.deviationParam
 #define LSMI controller.leastSquareMethodInfo

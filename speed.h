@@ -107,7 +107,7 @@ typedef struct TrackDectionParam {
     uint16_t halfSpeedTop;
 } TrackDectionParam;
 
-class Speed {
+class SpeedHandler {
    public:
     volatile SpeedInfo speedInfo;
     SpeedParam speedParam;
@@ -131,6 +131,6 @@ class Speed {
     int16_t getAimSpeed();
 };
 
-Speed speed;
+SpeedHandler speedhandler;
 
 #endif

@@ -40,6 +40,8 @@ add_executable(NewPlayer
   stack.cpp
   speed.h
   speed.cpp
+  motor.h
+  motor.cpp
 )
 
 target_link_libraries(NewPlayer PRIVATE Qt5::Widgets ${OpenCV_LIBS})

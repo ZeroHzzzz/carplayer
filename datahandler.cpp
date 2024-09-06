@@ -2,7 +2,7 @@
 
 extern ImageHandler imagehandler;
 extern Controller controller;
-extern Speed speed;
+extern SpeedHandler speedhandler;
 
 bool DataHandler::readdata(QString filename) {
     QString data, data_temp;

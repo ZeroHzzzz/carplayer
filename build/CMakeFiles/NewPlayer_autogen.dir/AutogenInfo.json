@@ -106,6 +106,12 @@
 			null
 		],
 		[
+			"C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/motor.h",
+			"MU",
+			"EWIEGA46WW/moc_motor.cpp",
+			null
+		],
+		[
 			"C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/speed.h",
 			"MU",
 			"EWIEGA46WW/moc_speed.cpp",
@@ -194,6 +200,11 @@
 		],
 		[
 			"C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/motor.cpp",
 			"MU",
 			null
 		],

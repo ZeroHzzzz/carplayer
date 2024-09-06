@@ -14,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NewPlayer.dir/main.cpp.obj.d"
   "CMakeFiles/NewPlayer.dir/mainwindow.cpp.obj"
   "CMakeFiles/NewPlayer.dir/mainwindow.cpp.obj.d"
+  "CMakeFiles/NewPlayer.dir/motor.cpp.obj"
+  "CMakeFiles/NewPlayer.dir/motor.cpp.obj.d"
   "CMakeFiles/NewPlayer.dir/speed.cpp.obj"
   "CMakeFiles/NewPlayer.dir/speed.cpp.obj.d"
   "CMakeFiles/NewPlayer.dir/stack.cpp.obj"

@@ -4,13 +4,13 @@ extern DataHandler datahandler;
 extern ImageHandler imagehandler;
 extern Controller controller;
 
-void Speed::speed_init() {
+void SpeedHandler::speed_init() {
     speedParam_init();
     SpeedInfo_Init();
     trackDectionParam_init();
 }
 
-void Speed::speedParam_init() {
+void SpeedHandler::speedParam_init() {
     SP.addSpeed = 1;  // 加速
 
     SP.maxSpeed = 270;  // 直道最大速度
@@ -41,7 +41,7 @@ void Speed::speedParam_init() {
     SP.parkingSpeed = 180;
 }
 
-void Speed::trackDectionParam_init() {
+void SpeedHandler::trackDectionParam_init() {
     TDP.strightAD = 20;     // 入直道的判断
     TDP.enterCurveAD = 12;  // 入弯减速的判断
     TDP.exitCurveAD = 25;   // 出弯加速的判断
@@ -75,7 +75,7 @@ void Speed::trackDectionParam_init() {
     TDP.halfSpeedTop = 54;
 }
 
-void Speed::SpeedInfo_Init() {
+void SpeedHandler::SpeedInfo_Init() {
     SI.varL[0] = 0;
     SI.varL[1] = 0;
     SI.varL[2] = 0;
@@ -103,7 +103,7 @@ void Speed::SpeedInfo_Init() {
     SI.encoderThreshold = 70;
 }
 
-int16_t Speed::getAimSpeed() {
+int16_t SpeedHandler::getAimSpeed() {
     int16_t aimSpeed;
     SpeedType _speedType;
 
@@ -196,7 +196,7 @@ int16_t Speed::getAimSpeed() {
         }
     }
     if (IF.annulusDelay) {
-        float DK = AD.sumDK / AD.cnt;
+        float DK = imagehandler.AD.sumDK / imagehandler.AD.cnt;
         int16_t annulusSpeed =
             (int16_t)(SP.annulusSpeed - (SP.annulusSpeed - SP.annulusMinSpeed) *
                                             DK * DK / SP.annulusSpeedK2 /
@@ -231,14 +231,14 @@ int16_t Speed::getAimSpeed() {
     return aimSpeed;
 }
 
-SpeedType Speed::getSpeedType() {
+SpeedType SpeedHandler::getSpeedType() {
     /************************** 进行速度类型判断 ******************************/
     int16_t maxSpeed = SI.varL[0] > SI.varR[0] ? SI.varL[0] : SI.varR[0];
     if (IF.annulus) {
         speedType = NORMAL_SHIFT;
         speedUpTime = 0;
         halfSpeedUpTime = 0;
-        if (IF.annulus && LAST_IF.annulus == 0) {
+        if (IF.annulus && imagehandler.LAST_IF.annulus == 0) {
             limitFlag = 1;
         }
     } else if (IF.ramp) {
@@ -249,7 +249,7 @@ SpeedType Speed::getSpeedType() {
         }
         speedUpTime = 0;
         halfSpeedUpTime = 0;
-        if (IF.ramp && LAST_IF.ramp == 0) {
+        if (IF.ramp && imagehandler.LAST_IF.ramp == 0) {
             limitFlag = 1;
         }
     } else if (II.annulusTop <= YY && speedType == NORMAL_SHIFT) {
@@ -391,7 +391,7 @@ SpeedType Speed::getSpeedType() {
     return speedType;
 }
 
-int16_t Speed::getBrakeSpeed() {
+int16_t SpeedHandler::getBrakeSpeed() {
     int16_t brakeSpeed;
     int16_t speedCut;
     /***************************计算直道刹车的速度****************************/
@@ -423,6 +423,6 @@ int16_t Speed::getBrakeSpeed() {
     return brakeSpeed;
 }
 
-uint8_t Speed::isBrakeFinished(int16_t aimSpeed) {
+uint8_t SpeedHandler::isBrakeFinished(int16_t aimSpeed) {
     return ((SI.varL[0] > SI.varR[0] ? SI.varL[0] : SI.varR[0]) <= aimSpeed);
 }

@@ -1,4 +1,8 @@
 #include <ctrl.h>
+#include <motor.h>
+
+extern SpeedHandler speedhandler;
+extern MotorHandler motorhandler;
 
 void Controller::go(uint8_t imgSize) {
     imagehandler.LAST_IF = IF;
@@ -116,7 +120,7 @@ void Controller::go(uint8_t imgSize) {
     }
 
     if (IF.wait_fork == 1 || IF.wait_fork == 2) {
-        fork_control();
+        motorhandler.fork_control();
     }
 
     if (!(IF.fork || IF.annulus || IF.parking || IF.ramp || IF.wait_fork == 1 ||
@@ -142,7 +146,7 @@ void Controller::go(uint8_t imgSize) {
 
     directionControl();
 
-    SI.aimSpeed = getAimSpeed();
+    SI.aimSpeed = speedhandler.getAimSpeed();
 }
 
 uint8_t Controller::fork_outPark_Detect() {

@@ -285,6 +285,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NewPlayer.dir\build.make CMakeFiles/NewPlayer.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+motor.obj: motor.cpp.obj
+.PHONY : motor.obj
+
+# target to build an object file
+motor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NewPlayer.dir\build.make CMakeFiles/NewPlayer.dir/motor.cpp.obj
+.PHONY : motor.cpp.obj
+
+motor.i: motor.cpp.i
+.PHONY : motor.i
+
+# target to preprocess a source file
+motor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NewPlayer.dir\build.make CMakeFiles/NewPlayer.dir/motor.cpp.i
+.PHONY : motor.cpp.i
+
+motor.s: motor.cpp.s
+.PHONY : motor.s
+
+# target to generate assembly for a file
+motor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NewPlayer.dir\build.make CMakeFiles/NewPlayer.dir/motor.cpp.s
+.PHONY : motor.cpp.s
+
 speed.obj: speed.cpp.obj
 .PHONY : speed.obj
 
@@ -361,6 +385,9 @@ help:
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... motor.obj
+	@echo ... motor.i
+	@echo ... motor.s
 	@echo ... speed.obj
 	@echo ... speed.i
 	@echo ... speed.s

@@ -4,7 +4,7 @@
 extern DataHandler datahandler;
 extern ImageHandler imagehandler;
 extern Controller controller;
-extern Speed speed;
+extern SpeedHandler speedhandler;
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
