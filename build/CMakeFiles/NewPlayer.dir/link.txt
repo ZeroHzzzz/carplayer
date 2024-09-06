@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\NewPlayer.dir/objects.a
+D:\Qt\Qt5.13.2\Tools\mingw730_64\bin\ar.exe qc CMakeFiles\NewPlayer.dir/objects.a @CMakeFiles\NewPlayer.dir\objects1.rsp
+D:\Qt\Qt5.13.2\Tools\mingw730_64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\NewPlayer.dir/objects.a -Wl,--no-whole-archive -o NewPlayer.exe -Wl,--out-implib,libNewPlayer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\NewPlayer.dir\linkLibs.rsp

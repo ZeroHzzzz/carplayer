@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+8baa355b8e1984b04f2e2e16880fd6da CMakeFiles/NewPlayer_autogen

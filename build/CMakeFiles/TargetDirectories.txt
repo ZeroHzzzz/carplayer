@@ -1,0 +1,4 @@
+C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build/CMakeFiles/NewPlayer.dir
+C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build/CMakeFiles/edit_cache.dir
+C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build/CMakeFiles/NewPlayer_autogen.dir

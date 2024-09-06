@@ -1,0 +1,50 @@
+[
+{
+  "directory": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build",
+  "command": "D:\\Qt\\Qt5.13.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/NewPlayer.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\NewPlayer.dir\\NewPlayer_autogen\\mocs_compilation.cpp.obj -c C:\\Users\\ZeroHzzzz\\Desktop\\QT_new\\src\\NewPlayer\\build\\NewPlayer_autogen\\mocs_compilation.cpp",
+  "file": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build/NewPlayer_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/NewPlayer.dir/NewPlayer_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build",
+  "command": "D:\\Qt\\Qt5.13.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/NewPlayer.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\NewPlayer.dir\\main.cpp.obj -c C:\\Users\\ZeroHzzzz\\Desktop\\QT_new\\src\\NewPlayer\\main.cpp",
+  "file": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/main.cpp",
+  "output": "CMakeFiles/NewPlayer.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build",
+  "command": "D:\\Qt\\Qt5.13.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/NewPlayer.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\NewPlayer.dir\\mainwindow.cpp.obj -c C:\\Users\\ZeroHzzzz\\Desktop\\QT_new\\src\\NewPlayer\\mainwindow.cpp",
+  "file": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/mainwindow.cpp",
+  "output": "CMakeFiles/NewPlayer.dir/mainwindow.cpp.obj"
+},
+{
+  "directory": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build",
+  "command": "D:\\Qt\\Qt5.13.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/NewPlayer.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\NewPlayer.dir\\datahandler.cpp.obj -c C:\\Users\\ZeroHzzzz\\Desktop\\QT_new\\src\\NewPlayer\\datahandler.cpp",
+  "file": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/datahandler.cpp",
+  "output": "CMakeFiles/NewPlayer.dir/datahandler.cpp.obj"
+},
+{
+  "directory": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build",
+  "command": "D:\\Qt\\Qt5.13.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/NewPlayer.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\NewPlayer.dir\\imagehandler.cpp.obj -c C:\\Users\\ZeroHzzzz\\Desktop\\QT_new\\src\\NewPlayer\\imagehandler.cpp",
+  "file": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/imagehandler.cpp",
+  "output": "CMakeFiles/NewPlayer.dir/imagehandler.cpp.obj"
+},
+{
+  "directory": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build",
+  "command": "D:\\Qt\\Qt5.13.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/NewPlayer.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\NewPlayer.dir\\ctrl.cpp.obj -c C:\\Users\\ZeroHzzzz\\Desktop\\QT_new\\src\\NewPlayer\\ctrl.cpp",
+  "file": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/ctrl.cpp",
+  "output": "CMakeFiles/NewPlayer.dir/ctrl.cpp.obj"
+},
+{
+  "directory": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build",
+  "command": "D:\\Qt\\Qt5.13.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/NewPlayer.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\NewPlayer.dir\\stack.cpp.obj -c C:\\Users\\ZeroHzzzz\\Desktop\\QT_new\\src\\NewPlayer\\stack.cpp",
+  "file": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/stack.cpp",
+  "output": "CMakeFiles/NewPlayer.dir/stack.cpp.obj"
+},
+{
+  "directory": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build",
+  "command": "D:\\Qt\\Qt5.13.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/NewPlayer.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\NewPlayer.dir\\speed.cpp.obj -c C:\\Users\\ZeroHzzzz\\Desktop\\QT_new\\src\\NewPlayer\\speed.cpp",
+  "file": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/speed.cpp",
+  "output": "CMakeFiles/NewPlayer.dir/speed.cpp.obj"
+}
+]
