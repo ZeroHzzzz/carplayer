@@ -33,15 +33,15 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 37), // "on_pushButton_browsersavepath..."
+QT_MOC_LITERAL(1, 11, 37), // "on_pushButton_browserreadpath..."
 QT_MOC_LITERAL(2, 49, 0), // ""
 QT_MOC_LITERAL(3, 50, 19), // "on_ReadData_clicked"
-QT_MOC_LITERAL(4, 70, 32) // "on_textEdit_savepath_textChanged"
+QT_MOC_LITERAL(4, 70, 32) // "on_textEdit_readpath_textChanged"
 
     },
-    "MainWindow\0on_pushButton_browsersavepath_clicked\0"
+    "MainWindow\0on_pushButton_browserreadpath_clicked\0"
     "\0on_ReadData_clicked\0"
-    "on_textEdit_savepath_textChanged"
+    "on_textEdit_readpath_textChanged"
 };
 #undef QT_MOC_LITERAL
 
@@ -77,9 +77,9 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_pushButton_browsersavepath_clicked(); break;
+        case 0: _t->on_pushButton_browserreadpath_clicked(); break;
         case 1: _t->on_ReadData_clicked(); break;
-        case 2: _t->on_textEdit_savepath_textChanged(); break;
+        case 2: _t->on_textEdit_readpath_textChanged(); break;
         default: ;
         }
     }

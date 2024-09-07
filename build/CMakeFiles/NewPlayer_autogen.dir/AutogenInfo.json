@@ -106,6 +106,12 @@
 			null
 		],
 		[
+			"C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/maphandler.h",
+			"MU",
+			"EWIEGA46WW/moc_maphandler.cpp",
+			null
+		],
+		[
 			"C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/motor.h",
 			"MU",
 			"EWIEGA46WW/moc_motor.cpp",
@@ -200,6 +206,11 @@
 		],
 		[
 			"C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/maphandler.cpp",
 			"MU",
 			null
 		],

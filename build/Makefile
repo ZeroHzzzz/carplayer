@@ -285,6 +285,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\NewPlayer.dir\build.make CMakeFiles/NewPlayer.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+maphandler.obj: maphandler.cpp.obj
+.PHONY : maphandler.obj
+
+# target to build an object file
+maphandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NewPlayer.dir\build.make CMakeFiles/NewPlayer.dir/maphandler.cpp.obj
+.PHONY : maphandler.cpp.obj
+
+maphandler.i: maphandler.cpp.i
+.PHONY : maphandler.i
+
+# target to preprocess a source file
+maphandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NewPlayer.dir\build.make CMakeFiles/NewPlayer.dir/maphandler.cpp.i
+.PHONY : maphandler.cpp.i
+
+maphandler.s: maphandler.cpp.s
+.PHONY : maphandler.s
+
+# target to generate assembly for a file
+maphandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\NewPlayer.dir\build.make CMakeFiles/NewPlayer.dir/maphandler.cpp.s
+.PHONY : maphandler.cpp.s
+
 motor.obj: motor.cpp.obj
 .PHONY : motor.obj
 
@@ -385,6 +409,9 @@ help:
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... maphandler.obj
+	@echo ... maphandler.i
+	@echo ... maphandler.s
 	@echo ... motor.obj
 	@echo ... motor.i
 	@echo ... motor.s

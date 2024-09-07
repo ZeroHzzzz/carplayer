@@ -1,15 +1,7 @@
 #ifndef IMAGEHANDLER_H
 #define IMAGEHANDLER_H
 
-#include <ctrl.h>
-#include <datahandler.h>
-#include <headfile.h>
-#include <mainwindow.h>
-#include <speed.h>
-#include <stack.h>
-#include <QFile>
-#include <QMessageBox>
-#include <QString>
+#include "headfile.h"
 
 #define LB(i) II.left_bottom[i]
 #define RB(i) II.right_bottom[i]
@@ -345,6 +337,11 @@
     }
 
 // struct
+typedef enum ImgSize {
+    _47_60,
+    _188_180,
+} ImgSize;
+
 typedef struct ImgInfo {
     uint8_t num_lm;  // 左图黑色区域个数
     uint8_t num_rm;  // 右图黑色区域个数
@@ -548,6 +545,8 @@ class ImageHandler {
     uint8_t speedlineLeft[YM];   // 23
     uint8_t speedlineRight[YM];  // 23
 
+    // map
+    uint8_t linemap[YM][XM];
     uint8_t allmap[YM][XM];
     uint16_t histogram[256];  // 灰度直方图
     uint8_t imgGray[ROW][COL];
@@ -639,6 +638,7 @@ class ImageHandler {
 
     uint8_t getDown(uint8_t dir);
     void getallmap();
+    void getlinemap();
     uint8_t isSearch(uint8_t x, uint8_t y, uint8_t map[][XM]);
     uint8_t getMapYMin_Col(uint8_t x, uint8_t map[][XM], uint8_t value);
     uint8_t getMapYMax_Col(uint8_t x, uint8_t map[][XM], uint8_t value);

@@ -52,5 +52,11 @@
   "command": "D:\\Qt\\Qt5.13.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/NewPlayer.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\NewPlayer.dir\\motor.cpp.obj -c C:\\Users\\ZeroHzzzz\\Desktop\\QT_new\\src\\NewPlayer\\motor.cpp",
   "file": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/motor.cpp",
   "output": "CMakeFiles/NewPlayer.dir/motor.cpp.obj"
+},
+{
+  "directory": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build",
+  "command": "D:\\Qt\\Qt5.13.2\\Tools\\mingw730_64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/NewPlayer.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\NewPlayer.dir\\maphandler.cpp.obj -c C:\\Users\\ZeroHzzzz\\Desktop\\QT_new\\src\\NewPlayer\\maphandler.cpp",
+  "file": "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/maphandler.cpp",
+  "output": "CMakeFiles/NewPlayer.dir/maphandler.cpp.obj"
 }
 ]

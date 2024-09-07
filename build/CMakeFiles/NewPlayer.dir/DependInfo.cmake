@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/imagehandler.cpp" "CMakeFiles/NewPlayer.dir/imagehandler.cpp.obj" "gcc" "CMakeFiles/NewPlayer.dir/imagehandler.cpp.obj.d"
   "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/main.cpp" "CMakeFiles/NewPlayer.dir/main.cpp.obj" "gcc" "CMakeFiles/NewPlayer.dir/main.cpp.obj.d"
   "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/mainwindow.cpp" "CMakeFiles/NewPlayer.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/NewPlayer.dir/mainwindow.cpp.obj.d"
+  "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/maphandler.cpp" "CMakeFiles/NewPlayer.dir/maphandler.cpp.obj" "gcc" "CMakeFiles/NewPlayer.dir/maphandler.cpp.obj.d"
   "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/motor.cpp" "CMakeFiles/NewPlayer.dir/motor.cpp.obj" "gcc" "CMakeFiles/NewPlayer.dir/motor.cpp.obj.d"
   "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/speed.cpp" "CMakeFiles/NewPlayer.dir/speed.cpp.obj" "gcc" "CMakeFiles/NewPlayer.dir/speed.cpp.obj.d"
   "C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/stack.cpp" "CMakeFiles/NewPlayer.dir/stack.cpp.obj" "gcc" "CMakeFiles/NewPlayer.dir/stack.cpp.obj.d"

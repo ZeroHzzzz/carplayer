@@ -10,7 +10,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QString>
-
+#include "maphandler.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -36,16 +36,18 @@ class MainWindow : public QMainWindow {
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
 
-    QString getSavePathText() const;
+    QString getReadPathText() const;
+    void showAllMaps(QPoint point);
+
+    Ui::MainWindow* ui;
 
    private slots:
-    void on_pushButton_browsersavepath_clicked();
+    void on_pushButton_browserreadpath_clicked();
 
     void on_ReadData_clicked();
 
-    void on_textEdit_savepath_textChanged();
+    void on_textEdit_readpath_textChanged();
 
    private:
-    Ui::MainWindow* ui;
 };
 #endif  // MAINWINDOW_H

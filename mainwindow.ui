@@ -37,7 +37,7 @@
      <string>ReadSDData</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit_savepath">
+   <widget class="QTextEdit" name="textEdit_readpath">
     <property name="geometry">
      <rect>
       <x>200</x>

@@ -32,7 +32,7 @@ public:
     QWidget *centralwidget;
     QComboBox *comboBox_device;
     QPushButton *ReadSDData;
-    QTextEdit *textEdit_savepath;
+    QTextEdit *textEdit_readpath;
     QPushButton *pushButton_browsersavepath;
     QPushButton *ReadData;
     QGroupBox *groupBox;
@@ -70,9 +70,9 @@ public:
         ReadSDData = new QPushButton(centralwidget);
         ReadSDData->setObjectName(QString::fromUtf8("ReadSDData"));
         ReadSDData->setGeometry(QRect(130, 10, 51, 21));
-        textEdit_savepath = new QTextEdit(centralwidget);
-        textEdit_savepath->setObjectName(QString::fromUtf8("textEdit_savepath"));
-        textEdit_savepath->setGeometry(QRect(200, 10, 101, 21));
+        textEdit_readpath = new QTextEdit(centralwidget);
+        textEdit_readpath->setObjectName(QString::fromUtf8("textEdit_readpath"));
+        textEdit_readpath->setGeometry(QRect(200, 10, 101, 21));
         pushButton_browsersavepath = new QPushButton(centralwidget);
         pushButton_browsersavepath->setObjectName(QString::fromUtf8("pushButton_browsersavepath"));
         pushButton_browsersavepath->setGeometry(QRect(310, 10, 51, 21));

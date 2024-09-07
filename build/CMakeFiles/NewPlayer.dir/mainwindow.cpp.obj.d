@@ -478,9 +478,7 @@ CMakeFiles/NewPlayer.dir/mainwindow.cpp.obj: \
  C:/PROGRA~1/OPENCV~2.0/include/opencv2/video/background_segm.hpp \
  C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/mainwindow.h \
  C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/speed.h \
- C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/stack.h \
  C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/headfile.h \
- C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/imagehandler.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QFile \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qfile.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QMessageBox \
@@ -491,6 +489,8 @@ CMakeFiles/NewPlayer.dir/mainwindow.cpp.obj: \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qfileinfo.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QMainWindow \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qmainwindow.h \
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\maphandler.h \
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\imagehandler.h \
  C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build/NewPlayer_autogen/include/ui_mainwindow.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QVariant \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qvariant.h \

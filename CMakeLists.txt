@@ -42,6 +42,8 @@ add_executable(NewPlayer
   speed.cpp
   motor.h
   motor.cpp
+  maphandler.h
+  maphandler.cpp
 )
 
 target_link_libraries(NewPlayer PRIVATE Qt5::Widgets ${OpenCV_LIBS})

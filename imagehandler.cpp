@@ -1,5 +1,9 @@
-#include <imagehandler.h>
+#include "imagehandler.h"
+#include "ctrl.h"
+#include "datahandler.h"
 #include "headfile.h"
+#include "speed.h"
+#include "stack.h"
 
 extern DataHandler datahandler;
 extern Controller controller;
@@ -299,6 +303,34 @@ void ImageHandler::getallmap() {
             _x = i << 2;
             _y = (YY - j) * 3;
             ostuJudge(_x, _y);
+        }
+    }
+}
+
+void ImageHandler::getlinemap() {
+    memset(linemap, 0, sizeof(linemap));
+
+    for (uint8_t j = 0; j < YM; ++j) {
+        if (ceil(leftline[j]) >= 0)
+            linemap[j][(uint8_t)ceil(leftline[j])] = 6;
+        if (floor(rightline[j]) <= XX)
+            linemap[j][(uint8_t)floor(rightline[j])] = 6;
+
+        linemap[j][speedlineLeft[j]] = 8;
+        linemap[j][speedlineRight[j]] = 8;
+    }
+
+    for (uint8_t j = 0; j < YM; ++j) {
+        for (uint8_t i = 0; i < XM; ++i) {
+            if (IF.ramp && j < YM / 2 && i == midline[j] / 2)
+                linemap[j][i] = 5;
+
+            if (leftmap[j][i] == 2 || rightmap[j][i] == 2)
+                linemap[j][i] = 2;
+            else if (leftmap[j][i] == 3 || rightmap[j][i] == 3)
+                linemap[j][i] = 3;
+            else if (leftmap[j][i] == 4 || rightmap[j][i] == 4)
+                linemap[j][i] = 4;
         }
     }
 }

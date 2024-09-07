@@ -17,3 +17,5 @@ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/main.cpp
 C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/speed.cpp
 C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/stack.cpp
 C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/motor.h
+C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/maphandler.h
+C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/maphandler.cpp

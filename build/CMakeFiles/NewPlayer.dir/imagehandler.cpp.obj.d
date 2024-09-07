@@ -1,11 +1,7 @@
 CMakeFiles/NewPlayer.dir/imagehandler.cpp.obj: \
  C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\imagehandler.cpp \
- C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/imagehandler.h \
- C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/ctrl.h \
- C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/datahandler.h \
- C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/mainwindow.h \
- C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/speed.h \
- C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/headfile.h \
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\imagehandler.h \
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\headfile.h \
  D:/Qt/Qt5.13.2/Tools/mingw730_64/x86_64-w64-mingw32/include/errno.h \
  D:/Qt/Qt5.13.2/Tools/mingw730_64/x86_64-w64-mingw32/include/crtdefs.h \
  D:/Qt/Qt5.13.2/Tools/mingw730_64/x86_64-w64-mingw32/include/_mingw.h \
@@ -477,6 +473,13 @@ CMakeFiles/NewPlayer.dir/imagehandler.cpp.obj: \
  C:/PROGRA~1/OPENCV~2.0/include/opencv2/video.hpp \
  C:/PROGRA~1/OPENCV~2.0/include/opencv2/video/tracking.hpp \
  C:/PROGRA~1/OPENCV~2.0/include/opencv2/video/background_segm.hpp \
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\ctrl.h \
+ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/datahandler.h \
+ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/ctrl.h \
+ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/imagehandler.h \
+ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/mainwindow.h \
+ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/speed.h \
+ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/headfile.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QFileInfo \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qfileinfo.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QMainWindow \
@@ -485,9 +488,10 @@ CMakeFiles/NewPlayer.dir/imagehandler.cpp.obj: \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qmessagebox.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QString \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qstring.h \
+ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/maphandler.h \
+ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/imagehandler.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QFile \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qfile.h \
- C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/stack.h \
- C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/headfile.h \
- C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/imagehandler.h \
- C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\headfile.h
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\datahandler.h \
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\speed.h \
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\stack.h
