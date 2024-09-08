@@ -1,9 +1,7 @@
 #include "motor.h"
-#include "ctrl.h"
-#include "imagehandler.h"
+#include "headfile.h"
 
-extern ImageHandler imagehandler;
-extern Controller controller;
+MotorHandler motorhandler;
 
 void MotorHandler::fork_control() {
     /* 到达三岔区域 */

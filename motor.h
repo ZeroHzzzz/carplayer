@@ -75,6 +75,5 @@ class MotorHandler {
     void pwm_move(int16_t move_pwm);
 };
 
-MotorHandler motorhandler;
-
+extern MotorHandler motorhandler;
 #endif

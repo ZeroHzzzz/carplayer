@@ -1,5 +1,7 @@
 #include "stack.h"
 
+StackHandler stackhandler;
+
 void StackHandler::InitStack(stack* s, uint32_t max, Point* data) {
     s->MAX = max;
     s->top = -1;

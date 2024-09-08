@@ -10,7 +10,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QString>
-#include "maphandler.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -37,7 +37,7 @@ class MainWindow : public QMainWindow {
     ~MainWindow();
 
     QString getReadPathText() const;
-    void showAllMaps(QPoint point);
+    void showAllMaps(QPoint point = QPoint(-1, -1));
 
     Ui::MainWindow* ui;
 

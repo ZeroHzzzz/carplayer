@@ -1,14 +1,10 @@
 #include "imagehandler.h"
 #include "ctrl.h"
 #include "datahandler.h"
-#include "headfile.h"
 #include "speed.h"
 #include "stack.h"
 
-extern DataHandler datahandler;
-extern Controller controller;
-extern SpeedHandler speedhandler;
-extern StackHandler stackhandler;
+ImageHandler imagehandler;
 
 bool ImageHandler::standard() {
     uint8_t speedX;

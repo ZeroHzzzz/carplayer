@@ -19,5 +19,6 @@ class StackHandler {
     Point PopStack(stack* s);
 };
 
-StackHandler stackhandler;
+extern StackHandler stackhandler;
+
 #endif

@@ -2,6 +2,7 @@
 #define IMAGEHANDLER_H
 
 #include "headfile.h"
+#include "stack.h"
 
 #define LB(i) II.left_bottom[i]
 #define RB(i) II.right_bottom[i]
@@ -826,6 +827,5 @@ class ImageHandler {
     void scanline(uint8_t start_x, uint8_t start_y, uint8_t map[][XM]);
 };
 
-ImageHandler imagehandler;
-
+extern ImageHandler imagehandler;
 #endif

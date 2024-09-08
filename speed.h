@@ -131,6 +131,5 @@ class SpeedHandler {
     int16_t getAimSpeed();
 };
 
-SpeedHandler speedhandler;
-
+extern SpeedHandler speedhandler;
 #endif

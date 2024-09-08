@@ -1,8 +1,6 @@
 #include <datahandler.h>
 
-extern ImageHandler imagehandler;
-extern Controller controller;
-extern SpeedHandler speedhandler;
+DataHandler datahandler;
 
 bool DataHandler::readdata(QString filename) {
     QString data, data_temp;

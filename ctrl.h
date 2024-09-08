@@ -2,9 +2,7 @@
 #define _CONTROL_H
 
 #include <datahandler.h>
-#include <headfile.h>
 #include <imagehandler.h>
-#include <mainwindow.h>
 #include <QString>
 
 #define ZERO_COEFF 10  // 零点系数
@@ -153,6 +151,7 @@ class Controller {
 
     void go(uint8_t);
     uint8_t fork_outPark_Detect();
+    void deviationParam_init();
     void PIDParam_init();
     void balanceControl();
     void directionControl();

@@ -3,7 +3,7 @@
 #include "imagehandler.h"
 #include "mainwindow.h"
 
-extern ImageHandler imagehandler;
+MapHandler maphandler;
 
 void MapHandler::Mat2Map(cv::Mat mat) {
     if (imgSize == _188_180) {

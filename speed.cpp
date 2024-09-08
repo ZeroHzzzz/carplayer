@@ -1,8 +1,6 @@
-#include <speed.h>
+#include "speed.h"
 
-extern DataHandler datahandler;
-extern ImageHandler imagehandler;
-extern Controller controller;
+SpeedHandler speedhandler;
 
 void SpeedHandler::speed_init() {
     speedParam_init();

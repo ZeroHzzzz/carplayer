@@ -23,6 +23,5 @@ class DataHandler {
     bool readdata(QString);
 };
 
-DataHandler datahandler;
-
+extern DataHandler datahandler;
 #endif

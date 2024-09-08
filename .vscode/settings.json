@@ -4,6 +4,8 @@
         "ratio": "cpp",
         "map": "cpp",
         "qdatetime": "cpp",
-        "qmainwindow": "cpp"
+        "qmainwindow": "cpp",
+        "string": "cpp",
+        "istream": "cpp"
     }
 }

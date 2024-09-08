@@ -1,12 +1,8 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-
-extern DataHandler datahandler;
-extern ImageHandler imagehandler;
-extern Controller controller;
-extern SpeedHandler speedhandler;
-extern MapHandler maphandler;
-
+#include "headfile.h"
+#include "imagehandler.h"
+#include "maphandler.h"
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
@@ -56,4 +52,7 @@ void MainWindow::on_ReadData_clicked() {
     QString readpath = getReadPathText();
     bool status = datahandler.readdata(readpath);
     status = imagehandler.standard();
+
+    imagehandler.getlinemap();
+    showAllMaps();
 }
