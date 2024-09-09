@@ -10,7 +10,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QString>
-
+#include "motor.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;

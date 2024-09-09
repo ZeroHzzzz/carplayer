@@ -488,8 +488,9 @@ CMakeFiles/NewPlayer.dir/ctrl.cpp.obj: \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qmessagebox.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QString \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qstring.h \
- D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QFile \
- D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qfile.h \
  C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/motor.h \
  C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/ctrl.h \
- C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/speed.h
+ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/speed.h \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QFile \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qfile.h \
+ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/motor.h

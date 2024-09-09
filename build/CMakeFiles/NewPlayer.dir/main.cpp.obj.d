@@ -491,6 +491,11 @@ CMakeFiles/NewPlayer.dir/main.cpp.obj: \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qfileinfo.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QMainWindow \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qmainwindow.h \
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\motor.h \
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\ctrl.h \
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\headfile.h \
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\imagehandler.h \
+ C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\speed.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QApplication \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qapplication.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qcoreapplication.h \
