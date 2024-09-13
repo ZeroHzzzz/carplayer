@@ -59,7 +59,10 @@ void MainWindow::showLCDNumber(int index) {
 }
 
 void MainWindow::changeSliderIndex(int index) {
+    // 内部修改不发送信号
+    // ui->slider->blockSignals(true);
     ui->slider->setValue(index);
+    // ui->slider->blockSignals(false);
 }
 void MainWindow::showAllMaps(QPoint point) {
     if (maphandler.imgSize == _188_180) {
@@ -333,7 +336,7 @@ void MainWindow::on_pause_clicked() {
 }
 
 void MainWindow::on_slider_valueChanged(int value) {
-    playbackTimer->stop();
+    // playbackTimer->stop();
     showLCDNumber(value);
     goToData(value);
 }
