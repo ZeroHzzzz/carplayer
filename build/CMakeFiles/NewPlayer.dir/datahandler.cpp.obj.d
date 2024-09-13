@@ -488,8 +488,12 @@ CMakeFiles/NewPlayer.dir/datahandler.cpp.obj: \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qmainwindow.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QMessageBox \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qmessagebox.h \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QTimer \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qtimer.h \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qbasictimer.h \
  C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/motor.h \
  C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/ctrl.h \
  C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/speed.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QFile \
- D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qfile.h
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qfile.h \
+ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/maphandler.h

@@ -341,7 +341,7 @@
 typedef enum ImgSize {
     _47_60,
     _188_180,
-} ImgSize;
+} ImgSize;  // 这里_47_60是data，而_188_180是灰度模式
 
 typedef struct ImgInfo {
     uint8_t num_lm;  // 左图黑色区域个数
@@ -465,7 +465,7 @@ typedef struct RampInfo {
 
 class ImageHandler {
    public:
-    EulerAngleTypedef SystemAttitude = {0, 0, 0};
+       EulerAngleTypedef SystemAttitude = {0, 0, 0};
     EulerAngleTypedef SystemAttitudeRate = {0, 0, 0};  // 当前欧拉角速度
     EulerAngleTypedef angle = {0, 0, 0};
     float relativeYaw;

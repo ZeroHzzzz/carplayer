@@ -187,3 +187,41 @@ void MapHandler::showRealMap(QLabel* label, QPoint) {
     label->resize(label->pixmap()->size());
     label->show();
 }
+
+void MapHandler::showImgGray(uint8_t map[ROW][COL],
+                             QLabel* label,
+                             QPoint point) {
+    uint8_t multiple = 2;
+    cv::Mat grayMat(ROW, COL, CV_8UC1, map);
+    cv::Mat rgbMat;
+
+    cvtColor(grayMat, rgbMat, CV_GRAY2RGB);                  // GRAY--->RGB
+    cv::resize(rgbMat, rgbMat, {0, 0}, multiple, multiple);  // 压缩
+
+    /* 高亮选中像素 */
+    if (point.x() >= 0 && point.y() >= 0) {
+        int x = point.x();
+        int y = point.y();
+        QPoint highlight;
+
+        for (int i = 0; i < 4 * multiple; ++i) {
+            for (int j = 0; j < 2 * multiple; ++j) {
+                highlight.rx() = x * multiple * 4 + i;
+                highlight.ry() = y * multiple * 2 + j;
+                if (highlight.y() >= 0 && highlight.y() < rgbMat.rows &&
+                    highlight.x() >= 0 && highlight.x() < rgbMat.cols) {
+                    rgbMat.at<cv::Vec3b>(highlight.y(), highlight.x())[0] = 50;
+                    rgbMat.at<cv::Vec3b>(highlight.y(), highlight.x())[1] = 205;
+                    rgbMat.at<cv::Vec3b>(highlight.y(), highlight.x())[2] = 50;
+                }
+            }
+        }
+    }
+
+    QImage img(static_cast<const uint8_t*>(rgbMat.data), rgbMat.cols,
+               rgbMat.rows, rgbMat.cols * rgbMat.channels(),
+               QImage::Format_RGB888);
+    label->setPixmap(QPixmap::fromImage(img));  // convert the image to a pixmap
+    label->resize(label->pixmap()->size());
+    label->show();
+}

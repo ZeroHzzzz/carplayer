@@ -491,6 +491,9 @@ CMakeFiles/NewPlayer.dir/mainwindow.cpp.obj: \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qfileinfo.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QMainWindow \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qmainwindow.h \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QTimer \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qtimer.h \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qbasictimer.h \
  C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\motor.h \
  C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\ctrl.h \
  C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\headfile.h \
@@ -506,10 +509,16 @@ CMakeFiles/NewPlayer.dir/mainwindow.cpp.obj: \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtGui/qguiapplication.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtGui/qinputmethod.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QComboBox \
- D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QDial \
- D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qdial.h \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QGridLayout \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qgridlayout.h \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qlayout.h \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qlayoutitem.h \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qboxlayout.h \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qgridlayout.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QGroupBox \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qgroupbox.h \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QHBoxLayout \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qboxlayout.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QLCDNumber \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qlcdnumber.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QLabel \

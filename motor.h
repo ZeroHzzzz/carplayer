@@ -46,6 +46,7 @@ typedef struct IncrementalPID {
 
 class MotorHandler {
    public:
+    int16_t servo_turn;
     IncrementalPID motorPIDLeft;   // 电机控制PID结构体
     IncrementalPID motorPIDRight;  // 电机控制PID结构体
     IncrementalPID motorPIDMiddle;

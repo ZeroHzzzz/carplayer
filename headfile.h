@@ -125,7 +125,4 @@ typedef struct stack {
     Point* data;
 } stack;
 
-extern int16_t annulus_yaw;
-extern int16_t annulus_yaw_limit;
-
 #endif
