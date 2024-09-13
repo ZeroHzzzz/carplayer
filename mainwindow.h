@@ -40,6 +40,7 @@ class MainWindow : public QMainWindow {
 
     void initProgressBar(int);
     void initDeviceCombobox();
+    void initMisc();
     void changePlayerStatus(bool);
     QString getReadDevice() const;
     QString getReadPathText() const;

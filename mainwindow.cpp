@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget* parent)
     ui->setupUi(this);
     map_installEventFilter();
     initDeviceCombobox();
+    // initMisc();
     changePlayerStatus(false);
 
     playbackTimer = new QTimer(this);
@@ -35,6 +36,11 @@ void MainWindow::initDeviceCombobox() {
 
 void MainWindow::initProgressBar(int maxn) {
     ui->slider->setRange(1, maxn);
+}
+void MainWindow::initMisc() {
+    ui->readType_combobox->adjustSize();
+    ui->ReadSDData->adjustSize();
+    ui->ReadData->adjustSize();
 }
 
 void MainWindow::map_installEventFilter() {
@@ -193,11 +199,17 @@ QPoint MainWindow::adjustPixelInfo(QPoint relativePoint,
 
 void MainWindow::onPlaybackTimeout() {
     // 根据当前读取类型，调用读取下一帧数据或图像
-    datahandler.readNextData();
+    if (datahandler.readNextData()) {
+        showAllMaps();
+        showLCDNumber(datahandler.dataCnt);
+        changeSliderIndex(datahandler.dataCnt);
+    } else {
+        playbackTimer->stop();
+        showAllMaps();
+        showLCDNumber(datahandler.dataCnt);
+        changeSliderIndex(datahandler.dataCnt);
+    }
     // letGo
-    showAllMaps();
-    showLCDNumber(datahandler.dataCnt);
-    changeSliderIndex(datahandler.dataCnt);
 }
 
 QString MainWindow::getReadDevice() const {
@@ -321,6 +333,7 @@ void MainWindow::on_pause_clicked() {
 }
 
 void MainWindow::on_slider_valueChanged(int value) {
+    playbackTimer->stop();
     showLCDNumber(value);
     goToData(value);
 }

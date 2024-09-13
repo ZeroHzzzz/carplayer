@@ -38,7 +38,7 @@ public:
     QPushButton *ReadData;
     QGroupBox *groupBox;
     QLabel *imgGray_label;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QGridLayout *gridLayout;
     QLabel *RightMap;
     QLabel *RealMap;
@@ -48,15 +48,14 @@ public:
     QLabel *InsideMap;
     QLabel *AllMap;
     QLabel *LineMap;
-    QWidget *widget1;
-    QHBoxLayout *horizontalLayout;
-    QPushButton *backward;
-    QPushButton *pause;
-    QPushButton *forward;
-    QWidget *widget2;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
     QSlider *slider;
     QLCDNumber *lcdNumber;
+    QLabel *pixelInfo_label;
+    QPushButton *backward;
+    QPushButton *forward;
+    QPushButton *pause;
     QGroupBox *groupBox_2;
     QLabel *STEP_label;
     QLabel *cornerLeft_label;
@@ -150,7 +149,6 @@ public:
     QLabel *aveDevRight_label;
     QLabel *aveDev_label;
     QLabel *nowThreshold_label;
-    QLabel *pixelInfo_label;
     QComboBox *readType_combobox;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -164,33 +162,34 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         comboBox_device = new QComboBox(centralwidget);
         comboBox_device->setObjectName(QString::fromUtf8("comboBox_device"));
-        comboBox_device->setGeometry(QRect(20, 10, 101, 21));
+        comboBox_device->setGeometry(QRect(30, 10, 101, 31));
         ReadSDData = new QPushButton(centralwidget);
         ReadSDData->setObjectName(QString::fromUtf8("ReadSDData"));
-        ReadSDData->setGeometry(QRect(130, 10, 51, 21));
+        ReadSDData->setGeometry(QRect(150, 10, 101, 31));
         textEdit_readpath = new QTextEdit(centralwidget);
         textEdit_readpath->setObjectName(QString::fromUtf8("textEdit_readpath"));
-        textEdit_readpath->setGeometry(QRect(200, 10, 101, 21));
+        textEdit_readpath->setGeometry(QRect(290, 10, 331, 31));
         pushButton_browserreadpath = new QPushButton(centralwidget);
         pushButton_browserreadpath->setObjectName(QString::fromUtf8("pushButton_browserreadpath"));
-        pushButton_browserreadpath->setGeometry(QRect(310, 10, 51, 21));
+        pushButton_browserreadpath->setGeometry(QRect(640, 10, 80, 31));
         ReadData = new QPushButton(centralwidget);
         ReadData->setObjectName(QString::fromUtf8("ReadData"));
-        ReadData->setGeometry(QRect(370, 10, 51, 21));
+        ReadData->setGeometry(QRect(750, 10, 81, 31));
+        ReadData->setAutoDefault(false);
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(20, 30, 911, 861));
+        groupBox->setGeometry(QRect(20, 40, 911, 861));
         imgGray_label = new QLabel(groupBox);
         imgGray_label->setObjectName(QString::fromUtf8("imgGray_label"));
         imgGray_label->setGeometry(QRect(710, 680, 72, 15));
-        widget = new QWidget(groupBox);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(20, 30, 734, 611));
-        gridLayout = new QGridLayout(widget);
+        layoutWidget = new QWidget(groupBox);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(20, 30, 734, 611));
+        gridLayout = new QGridLayout(layoutWidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setSizeConstraint(QLayout::SetMinimumSize);
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        RightMap = new QLabel(widget);
+        RightMap = new QLabel(layoutWidget);
         RightMap->setObjectName(QString::fromUtf8("RightMap"));
         RightMap->setMinimumSize(QSize(47, 60));
         RightMap->setBaseSize(QSize(47, 60));
@@ -198,7 +197,7 @@ public:
 
         gridLayout->addWidget(RightMap, 1, 1, 1, 1);
 
-        RealMap = new QLabel(widget);
+        RealMap = new QLabel(layoutWidget);
         RealMap->setObjectName(QString::fromUtf8("RealMap"));
         RealMap->setMinimumSize(QSize(47, 60));
         RealMap->setBaseSize(QSize(47, 60));
@@ -206,7 +205,7 @@ public:
 
         gridLayout->addWidget(RealMap, 0, 2, 1, 1);
 
-        LeftMap = new QLabel(widget);
+        LeftMap = new QLabel(layoutWidget);
         LeftMap->setObjectName(QString::fromUtf8("LeftMap"));
         LeftMap->setMinimumSize(QSize(47, 60));
         LeftMap->setBaseSize(QSize(47, 60));
@@ -214,7 +213,7 @@ public:
 
         gridLayout->addWidget(LeftMap, 1, 0, 1, 1);
 
-        DeleteMap = new QLabel(widget);
+        DeleteMap = new QLabel(layoutWidget);
         DeleteMap->setObjectName(QString::fromUtf8("DeleteMap"));
         DeleteMap->setMinimumSize(QSize(47, 60));
         DeleteMap->setBaseSize(QSize(47, 60));
@@ -222,7 +221,7 @@ public:
 
         gridLayout->addWidget(DeleteMap, 2, 0, 1, 1);
 
-        BaseMap = new QLabel(widget);
+        BaseMap = new QLabel(layoutWidget);
         BaseMap->setObjectName(QString::fromUtf8("BaseMap"));
         BaseMap->setMinimumSize(QSize(47, 60));
         BaseMap->setBaseSize(QSize(47, 60));
@@ -230,7 +229,7 @@ public:
 
         gridLayout->addWidget(BaseMap, 0, 0, 1, 1);
 
-        InsideMap = new QLabel(widget);
+        InsideMap = new QLabel(layoutWidget);
         InsideMap->setObjectName(QString::fromUtf8("InsideMap"));
         InsideMap->setMinimumSize(QSize(47, 60));
         InsideMap->setBaseSize(QSize(47, 60));
@@ -238,7 +237,7 @@ public:
 
         gridLayout->addWidget(InsideMap, 2, 1, 1, 1);
 
-        AllMap = new QLabel(widget);
+        AllMap = new QLabel(layoutWidget);
         AllMap->setObjectName(QString::fromUtf8("AllMap"));
         AllMap->setMinimumSize(QSize(47, 60));
         AllMap->setBaseSize(QSize(47, 60));
@@ -246,7 +245,7 @@ public:
 
         gridLayout->addWidget(AllMap, 1, 2, 1, 1);
 
-        LineMap = new QLabel(widget);
+        LineMap = new QLabel(layoutWidget);
         LineMap->setObjectName(QString::fromUtf8("LineMap"));
         LineMap->setMinimumSize(QSize(47, 60));
         LineMap->setBaseSize(QSize(47, 60));
@@ -254,45 +253,36 @@ public:
 
         gridLayout->addWidget(LineMap, 0, 1, 1, 1);
 
-        widget1 = new QWidget(groupBox);
-        widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(200, 780, 261, 71));
-        horizontalLayout = new QHBoxLayout(widget1);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        backward = new QPushButton(widget1);
-        backward->setObjectName(QString::fromUtf8("backward"));
-
-        horizontalLayout->addWidget(backward);
-
-        pause = new QPushButton(widget1);
-        pause->setObjectName(QString::fromUtf8("pause"));
-
-        horizontalLayout->addWidget(pause);
-
-        forward = new QPushButton(widget1);
-        forward->setObjectName(QString::fromUtf8("forward"));
-
-        horizontalLayout->addWidget(forward);
-
-        widget2 = new QWidget(groupBox);
-        widget2->setObjectName(QString::fromUtf8("widget2"));
-        widget2->setGeometry(QRect(70, 710, 561, 41));
-        horizontalLayout_2 = new QHBoxLayout(widget2);
+        layoutWidget1 = new QWidget(groupBox);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(70, 710, 561, 41));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        slider = new QSlider(widget2);
+        slider = new QSlider(layoutWidget1);
         slider->setObjectName(QString::fromUtf8("slider"));
         slider->setOrientation(Qt::Horizontal);
         slider->setTickInterval(1);
 
         horizontalLayout_2->addWidget(slider);
 
-        lcdNumber = new QLCDNumber(widget2);
+        lcdNumber = new QLCDNumber(layoutWidget1);
         lcdNumber->setObjectName(QString::fromUtf8("lcdNumber"));
 
         horizontalLayout_2->addWidget(lcdNumber);
 
+        pixelInfo_label = new QLabel(groupBox);
+        pixelInfo_label->setObjectName(QString::fromUtf8("pixelInfo_label"));
+        pixelInfo_label->setGeometry(QRect(780, 20, 41, 16));
+        backward = new QPushButton(groupBox);
+        backward->setObjectName(QString::fromUtf8("backward"));
+        backward->setGeometry(QRect(180, 795, 80, 31));
+        forward = new QPushButton(groupBox);
+        forward->setObjectName(QString::fromUtf8("forward"));
+        forward->setGeometry(QRect(400, 795, 80, 31));
+        pause = new QPushButton(groupBox);
+        pause->setObjectName(QString::fromUtf8("pause"));
+        pause->setGeometry(QRect(290, 795, 80, 31));
         groupBox_2 = new QGroupBox(centralwidget);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
         groupBox_2->setGeometry(QRect(970, 40, 921, 721));
@@ -577,14 +567,11 @@ public:
         nowThreshold_label = new QLabel(groupBox_2);
         nowThreshold_label->setObjectName(QString::fromUtf8("nowThreshold_label"));
         nowThreshold_label->setGeometry(QRect(20, 610, 41, 9));
-        pixelInfo_label = new QLabel(centralwidget);
-        pixelInfo_label->setObjectName(QString::fromUtf8("pixelInfo_label"));
-        pixelInfo_label->setGeometry(QRect(580, 10, 41, 16));
         readType_combobox = new QComboBox(centralwidget);
         readType_combobox->addItem(QString());
         readType_combobox->addItem(QString());
         readType_combobox->setObjectName(QString::fromUtf8("readType_combobox"));
-        readType_combobox->setGeometry(QRect(440, 10, 62, 22));
+        readType_combobox->setGeometry(QRect(860, 10, 71, 31));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -615,9 +602,10 @@ public:
         InsideMap->setText(QCoreApplication::translate("MainWindow", "InsideMap", nullptr));
         AllMap->setText(QCoreApplication::translate("MainWindow", "AllMap", nullptr));
         LineMap->setText(QCoreApplication::translate("MainWindow", "LineMap", nullptr));
-        backward->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        pause->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        forward->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        pixelInfo_label->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        backward->setText(QCoreApplication::translate("MainWindow", "\345\220\216\351\200\200", nullptr));
+        forward->setText(QCoreApplication::translate("MainWindow", "\345\211\215\350\277\233", nullptr));
+        pause->setText(QCoreApplication::translate("MainWindow", "\345\274\200\345\247\213/\346\232\202\345\201\234", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("MainWindow", "GroupBox", nullptr));
         STEP_label->setText(QCoreApplication::translate("MainWindow", "STEP", nullptr));
         cornerLeft_label->setText(QCoreApplication::translate("MainWindow", "cornerLeft", nullptr));
@@ -711,7 +699,6 @@ public:
         aveDevRight_label->setText(QCoreApplication::translate("MainWindow", "aveDevRight_label", nullptr));
         aveDev_label->setText(QCoreApplication::translate("MainWindow", "aveDev_label", nullptr));
         nowThreshold_label->setText(QCoreApplication::translate("MainWindow", "nowThreshold_label", nullptr));
-        pixelInfo_label->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         readType_combobox->setItemText(0, QCoreApplication::translate("MainWindow", "\346\225\260\346\215\256\346\250\241\345\274\217", nullptr));
         readType_combobox->setItemText(1, QCoreApplication::translate("MainWindow", "\345\233\276\345\203\217\346\250\241\345\274\217", nullptr));
 

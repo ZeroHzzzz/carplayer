@@ -62,6 +62,7 @@ bool DataHandler::readNextData() {
     if (dataCnt > (int)dataNum) {
         offset = 0;
         dataCnt = 0;
+        return false;
     }
 
     if (readdata()) {
@@ -69,6 +70,7 @@ bool DataHandler::readNextData() {
         imagehandler.standard();
         imagehandler.getlinemap();
     }
+    return true;
 }
 
 /* 读取前一帧数据 */
