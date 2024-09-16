@@ -37,7 +37,6 @@ public:
     QPushButton *pushButton_browserreadpath;
     QPushButton *ReadData;
     QGroupBox *groupBox;
-    QLabel *imgGray_label;
     QWidget *layoutWidget;
     QGridLayout *gridLayout;
     QLabel *RightMap;
@@ -48,6 +47,7 @@ public:
     QLabel *InsideMap;
     QLabel *AllMap;
     QLabel *LineMap;
+    QLabel *imgGray_label;
     QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
     QSlider *slider;
@@ -56,6 +56,7 @@ public:
     QPushButton *backward;
     QPushButton *forward;
     QPushButton *pause;
+    QPushButton *Reset;
     QGroupBox *groupBox_2;
     QLabel *STEP_label;
     QLabel *cornerLeft_label;
@@ -179,9 +180,6 @@ public:
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
         groupBox->setGeometry(QRect(20, 40, 911, 861));
-        imgGray_label = new QLabel(groupBox);
-        imgGray_label->setObjectName(QString::fromUtf8("imgGray_label"));
-        imgGray_label->setGeometry(QRect(710, 680, 72, 15));
         layoutWidget = new QWidget(groupBox);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
         layoutWidget->setGeometry(QRect(20, 30, 734, 611));
@@ -253,6 +251,11 @@ public:
 
         gridLayout->addWidget(LineMap, 0, 1, 1, 1);
 
+        imgGray_label = new QLabel(layoutWidget);
+        imgGray_label->setObjectName(QString::fromUtf8("imgGray_label"));
+
+        gridLayout->addWidget(imgGray_label, 2, 2, 1, 1);
+
         layoutWidget1 = new QWidget(groupBox);
         layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
         layoutWidget1->setGeometry(QRect(70, 710, 561, 41));
@@ -283,6 +286,9 @@ public:
         pause = new QPushButton(groupBox);
         pause->setObjectName(QString::fromUtf8("pause"));
         pause->setGeometry(QRect(290, 795, 80, 31));
+        Reset = new QPushButton(groupBox);
+        Reset->setObjectName(QString::fromUtf8("Reset"));
+        Reset->setGeometry(QRect(20, 790, 61, 31));
         groupBox_2 = new QGroupBox(centralwidget);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
         groupBox_2->setGeometry(QRect(970, 40, 921, 721));
@@ -593,7 +599,6 @@ public:
         pushButton_browserreadpath->setText(QCoreApplication::translate("MainWindow", "\346\265\217\350\247\210", nullptr));
         ReadData->setText(QCoreApplication::translate("MainWindow", "ReadData", nullptr));
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "GroupBox", nullptr));
-        imgGray_label->setText(QCoreApplication::translate("MainWindow", "imgGray", nullptr));
         RightMap->setText(QCoreApplication::translate("MainWindow", "RightMap", nullptr));
         RealMap->setText(QCoreApplication::translate("MainWindow", "RealMap", nullptr));
         LeftMap->setText(QCoreApplication::translate("MainWindow", "LeftMap", nullptr));
@@ -602,10 +607,12 @@ public:
         InsideMap->setText(QCoreApplication::translate("MainWindow", "InsideMap", nullptr));
         AllMap->setText(QCoreApplication::translate("MainWindow", "AllMap", nullptr));
         LineMap->setText(QCoreApplication::translate("MainWindow", "LineMap", nullptr));
+        imgGray_label->setText(QCoreApplication::translate("MainWindow", "imgGray", nullptr));
         pixelInfo_label->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         backward->setText(QCoreApplication::translate("MainWindow", "\345\220\216\351\200\200", nullptr));
         forward->setText(QCoreApplication::translate("MainWindow", "\345\211\215\350\277\233", nullptr));
         pause->setText(QCoreApplication::translate("MainWindow", "\345\274\200\345\247\213/\346\232\202\345\201\234", nullptr));
+        Reset->setText(QCoreApplication::translate("MainWindow", "ReSet", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("MainWindow", "GroupBox", nullptr));
         STEP_label->setText(QCoreApplication::translate("MainWindow", "STEP", nullptr));
         cornerLeft_label->setText(QCoreApplication::translate("MainWindow", "cornerLeft", nullptr));

@@ -88,19 +88,6 @@
     <property name="title">
      <string>GroupBox</string>
     </property>
-    <widget class="QLabel" name="imgGray_label">
-     <property name="geometry">
-      <rect>
-       <x>710</x>
-       <y>680</y>
-       <width>72</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>imgGray</string>
-     </property>
-    </widget>
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
@@ -290,6 +277,13 @@
         </property>
        </widget>
       </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="imgGray_label">
+        <property name="text">
+         <string>imgGray</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </widget>
     <widget class="QWidget" name="layoutWidget">
@@ -367,6 +361,19 @@
      </property>
      <property name="text">
       <string>开始/暂停</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Reset">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>790</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ReSet</string>
      </property>
     </widget>
    </widget>

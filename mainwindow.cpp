@@ -1,8 +1,10 @@
 #include "mainwindow.h"
+#include <QProcess>
 #include "./ui_mainwindow.h"
 #include "headfile.h"
 #include "imagehandler.h"
 #include "maphandler.h"
+
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
@@ -14,11 +16,14 @@ MainWindow::MainWindow(QWidget* parent)
     playbackTimer = new QTimer(this);
     connect(playbackTimer, &QTimer::timeout, this,
             &MainWindow::onPlaybackTimeout);
+
+    initData();
 }
 
 MainWindow::~MainWindow() {
     delete ui;
 }
+
 void MainWindow::changePlayerStatus(bool status) {
     // true 启用
     ui->slider->setEnabled(status);
@@ -28,9 +33,34 @@ void MainWindow::changePlayerStatus(bool status) {
 }
 
 void MainWindow::initDeviceCombobox() {
-    QFileInfoList drives = QDir::drives();
-    for (const QFileInfo& drive : drives) {
-        ui->comboBox_device->addItem(drive.absoluteFilePath());
+    // QFileInfoList drives = QDir::drives();
+    // for (const QFileInfo& drive : drives) {
+    //     ui->comboBox_device->addItem(drive.absoluteFilePath());
+    // }
+
+    // 清空 ComboBox
+    ui->comboBox_device->clear();
+
+    // 通过 WMIC 获取盘符信息
+    QProcess process;
+    process.start("wmic logicaldisk get name");
+    process.waitForFinished();
+
+    QString output = process.readAllStandardOutput();
+    QStringList lines = output.split("\n", QString::SkipEmptyParts);
+
+    // 解析并添加盘符信息到 ComboBox
+    for (QString& line : lines) {
+        line = line.trimmed();
+        if (line.isEmpty() || line.startsWith("Name")) {
+            continue;  // 跳过空行和表头
+        }
+        ui->comboBox_device->addItem(line);  // 将盘符添加到 ComboBox
+    }
+
+    // 如果没有检测到任何盘符，提示用户
+    if (ui->comboBox_device->count() == 0) {
+        ui->comboBox_device->addItem("No drives detected");
     }
 }
 
@@ -41,6 +71,15 @@ void MainWindow::initMisc() {
     ui->readType_combobox->adjustSize();
     ui->ReadSDData->adjustSize();
     ui->ReadData->adjustSize();
+}
+
+void MainWindow::initData() {
+    imagehandler.map_init();
+    imagehandler.getlinemap();
+    datahandler.initdata();
+    showAllMaps();
+    changeSliderIndex(0);
+    changePlayerStatus(false);
 }
 
 void MainWindow::map_installEventFilter() {
@@ -246,6 +285,7 @@ void MainWindow::on_textEdit_readpath_textChanged() {
     if (!QFileInfo::exists(savePath)) {
         QMessageBox::warning(this, "路径错误",
                              "读取路径无效，请选择有效的文件路径。");
+        return;
     }
 }
 
@@ -302,6 +342,7 @@ void MainWindow::on_ReadData_clicked() {
     } else {
         QMessageBox::warning(this, "路径错误",
                              "读取路径无效，请选择有效的文件路径。");
+        return;
     }
 }
 
@@ -743,6 +784,7 @@ void MainWindow::on_ReadSDData_clicked() {
     QString savepath = QFileDialog::getExistingDirectory(this, "选择目录", "");
     if (savepath.isEmpty()) {
         QMessageBox::warning(this, "警告", "未选择任何目录，请选择一个目录！");
+        return;
     }
 
     if (datahandler.readType == dataType) {
@@ -776,4 +818,8 @@ void MainWindow::on_ReadSDData_clicked() {
             return;
         }
     }
+}
+
+void MainWindow::on_Reset_clicked() {
+    initData();
 }

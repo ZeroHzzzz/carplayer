@@ -41,6 +41,8 @@ class MainWindow : public QMainWindow {
     void initProgressBar(int);
     void initDeviceCombobox();
     void initMisc();
+    void initData();
+
     void changePlayerStatus(bool);
     QString getReadDevice() const;
     QString getReadPathText() const;
@@ -82,6 +84,8 @@ class MainWindow : public QMainWindow {
 
     void on_ReadSDData_clicked();
 
-   private:
+    void on_Reset_clicked();
+
+private:
 };
 #endif  // MAINWINDOW_H

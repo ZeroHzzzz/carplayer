@@ -25,11 +25,12 @@ class DataHandler {
     int imgNum = 0;
     int imgCnt = 0;
     int dataNum = 0;
-    int dataCnt;
+    int dataCnt = 0;
     ReadType readType;
     uint32_t offset;
     QString nowImgName;
 
+    void initdata();
     bool data2Trex(QString, QString, std::string&);
     bool data2Img(QString, QString, std::string&);
     bool readdata();

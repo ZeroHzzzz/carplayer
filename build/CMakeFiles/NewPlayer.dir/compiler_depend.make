@@ -2544,6 +2544,7 @@ CMakeFiles/NewPlayer.dir/mainwindow.cpp.obj: C:/Users/ZeroHzzzz/Desktop/QT_new/s
   D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QDebug \
   D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QFile \
   D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QFileInfo \
+  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QProcess \
   D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QRegExp \
   D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QStorageInfo \
   D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QString \
@@ -2596,6 +2597,7 @@ CMakeFiles/NewPlayer.dir/mainwindow.cpp.obj: C:/Users/ZeroHzzzz/Desktop/QT_new/s
   D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qobjectdefs_impl.h \
   D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qpair.h \
   D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qpoint.h \
+  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qprocess.h \
   D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qprocessordetection.h \
   D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qrect.h \
   D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qrefcount.h \
@@ -5202,6 +5204,8 @@ C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/imagehandler.h:
 
 D:/Qt/Qt5.13.2/Tools/mingw730_64/x86_64-w64-mingw32/include/unistd.h:
 
+D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qprocess.h:
+
 C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/mainwindow.h:
 
 C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/motor.h:
@@ -5592,9 +5596,9 @@ D:/Qt/Qt5.13.2/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bi
 
 D:/Qt/Qt5.13.2/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/cpp_type_traits.h:
 
-D:/Qt/Qt5.13.2/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/deque.tcc:
-
 D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qabstractscrollarea.h:
+
+D:/Qt/Qt5.13.2/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/deque.tcc:
 
 D:/Qt/Qt5.13.2/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits/locale_facets_nonio.tcc:
 
@@ -5880,6 +5884,10 @@ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtGui/qinputmethod.h:
 
 C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/mainwindow.cpp:
 
+D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qboxlayout.h:
+
+D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QProcess:
+
 D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtGui/qpen.h:
 
 D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtGui/qtextcursor.h:
@@ -5901,8 +5909,6 @@ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/QWidget:
 D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qaction.h:
 
 D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qactiongroup.h:
-
-D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qboxlayout.h:
 
 D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtWidgets/qgridlayout.h:
 

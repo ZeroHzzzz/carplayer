@@ -3,6 +3,18 @@
 #include <string>
 DataHandler datahandler;
 
+void DataHandler::initdata() {
+    imgCnt = 0;
+    imgNum = 0;
+    dataNum = 0;
+    dataCnt = 0;
+    offset = 0;
+    nowImgName.clear();
+    data.clear();
+    memset(imagehandler.allmap, 0, sizeof(imagehandler.allmap));
+    memset(sdBuff, 0, sizeof(sdBuff));
+}
+
 bool DataHandler::readdata() {
     offset = data.indexOf("boom7", offset);
 

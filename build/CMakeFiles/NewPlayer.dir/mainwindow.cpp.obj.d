@@ -499,6 +499,8 @@ CMakeFiles/NewPlayer.dir/mainwindow.cpp.obj: \
  C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\headfile.h \
  C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\imagehandler.h \
  C:\Users\ZeroHzzzz\Desktop\QT_new\src\NewPlayer\speed.h \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QProcess \
+ D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qprocess.h \
  C:/Users/ZeroHzzzz/Desktop/QT_new/src/NewPlayer/build/NewPlayer_autogen/include/ui_mainwindow.h \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/QVariant \
  D:/Qt/Qt5.13.2/5.13.2/mingw73_64/include/QtCore/qvariant.h \
